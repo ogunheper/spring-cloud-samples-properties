@@ -1,0 +1,21 @@
+---
+server:
+  port: ${DEMO_SERVICE_PORT:8080}
+
+---
+spring:
+  profiles: prod
+
+demo:
+  service:
+    username: ali
+    password: veli
+
+---
+spring:
+  profiles: test
+
+demo:
+  service:
+    username: ali-test
+    password: veli-test
