@@ -1,0 +1,11 @@
+---
+server:
+  port: ${IDDAA_SERVICE_PORT:6060}
+
+---
+spring:
+  profiles: prod
+
+---
+spring:
+  profiles: test
