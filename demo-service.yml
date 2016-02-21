@@ -8,8 +8,8 @@ spring:
 
 demo:
   service:
-    username: ali-prod
-    password: veli-prod
+    username: ali-prod2
+    password: veli-prod2
 
 ---
 spring:
