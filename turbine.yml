@@ -1,4 +1,7 @@
 ---
+server:
+  port: ${TURBINE_AMQP_PORT:8989}
+
 turbine:
   amqp:
     port: ${TURBINE_AMQP_PORT:8989}
