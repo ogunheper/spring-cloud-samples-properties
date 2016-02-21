@@ -1,0 +1,12 @@
+---
+server:
+  port: ${HYSTRIX_SERVICE_PORT:7979}
+  contextPath:
+
+---
+spring:
+  profiles: prod
+
+---
+spring:
+  profiles: test

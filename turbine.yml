@@ -1,0 +1,21 @@
+---
+server:
+  port: ${TURBINE_SERVICE_PORT:6969}
+
+turbine:
+  amqp:
+    port: ${TURBINE_AMQP_PORT:8989}
+  aggregator:
+    clusterConfig: microservices-cluster
+  #appConfig: finance,iddaa
+  clusterNameExpression: "'microservices-cluster'"
+  #instanceUrlSuffix: /hystrix.stream
+  #instanceUrlSuffix.IDDAA: /hystrix.stream
+
+---
+spring:
+  profiles: prod
+
+---
+spring:
+  profiles: test
